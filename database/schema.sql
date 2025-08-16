@@ -1,11 +1,14 @@
--- TODO: Definir las tablas del sistema
 
 -- Tabla de usuarios
 CREATE TABLE users (
-    -- TODO: Agregar campos para id, username, email, password_hash, created_at
+    id SERIAL PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    email VARCHAR(120) UNIQUE NOT NULL,
+    password_hash VARCHAR(128) NOT NULL,
+    is_active BOOLEAN DEFAULT TRUE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Tabla de productos  
 CREATE TABLE products (
     -- TODO: Agregar campos para id, name, description, price, stock, image_url, created_at
 );
