@@ -1,2 +1,4 @@
 # Database
-
+POSTGRES_DB=tienda_db
+POSTGRES_USER=tienda_user
+POSTGRES_PASSWORD=tienda_password
